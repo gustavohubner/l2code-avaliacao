@@ -209,14 +209,12 @@ h4 {
 }
 
 .blur-logo {
-  position: absolute;
   height: 100%;
   opacity: 0.1;
   filter: blur(125px);
   transform: matrix(-1, 0, 0, 1, 0, 0);
   width: 100%;
   display: flex;
-  z-index: 1;
 }
 
 .z-index-2 {
@@ -246,6 +244,15 @@ h4 {
   height: auto;
 }
 
+.footer-border-2 {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  border: 1px solid var(--cinza1);
+  border-radius: 20px;
+  /*padding: 20px 20px 20px 20px;*/
+  height: 100%;
+}
+
 .footer-border {
   flex: 0 0 auto;
   box-sizing: border-box;
@@ -253,6 +260,7 @@ h4 {
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
   height: 100%;
+  max-width: 1392px;
 }
 
 .cinza1 {
@@ -489,6 +497,8 @@ footer {
 
 .frame-background {
   background: linear-gradient(0deg, var(--cinza0) 0%, rgba(255,255,255,0) 50%), url("../../assets/img/Circles.svg?h=252fc529d60b4a8f2a03a6bc1d1527da") center;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-border-up {
@@ -496,12 +506,10 @@ footer {
 }
 
 .square-div {
-}
-
-.square-div {
   position: absolute;
   width: 100px;
   height: 120px;
+  /*z-index: 101;*/
 }
 
 .square-div-text {
@@ -513,6 +521,7 @@ footer {
   text-align: center;
   letter-spacing: 0.2px;
   color: var(--cinza2);
+  white-space: nowrap;
 }
 
 .square-img-blur {
@@ -522,11 +531,25 @@ footer {
   filter: blur(25px);
   border-radius: 20px;
   z-index: 0;
+  width: 8vw;
+  max-width: 89px;
 }
 
 .square-img {
   position: relative;
   border-radius: 20px;
   z-index: 1;
+  width: 7vw;
+  max-width: 89px;
+}
+
+.div-blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: -2;
 }
 
