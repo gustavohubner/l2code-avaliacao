@@ -1,13 +1,13 @@
 let card_template = document.getElementById('card-template')
 let container = document.getElementById('card-container')
-let scrollpos = 0;
+// let scrollpos = 0;
 
 let imgs = [
-    'cards/Image01.png',
-    'cards/Image02.png',
-    'cards/Image03.png',
-    'cards/Image04.png',
-    'cards/Image05.png'
+    'assets/img/cards/Image01.png',
+    'assets/img/cards/Image02.png',
+    'assets/img/cards/Image03.png',
+    'assets/img/cards/Image04.png',
+    'assets/img/cards/Image05.png'
 ]
 
 
@@ -21,9 +21,9 @@ function load_auctions() {
     }
 }
 
-function scroll(amount) {
+// function scroll(amount) {
 
-    container.scroll({left: scrollpos, behaviour:'smooth'})
-}
+//     container.scroll({left: scrollpos, behaviour:'smooth'})
+// }
 
 load_auctions()
