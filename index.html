@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="assets/css/styles.css?h=53a0a518241197ba8d0b6bdbb2bbe1ed">
 </head>
 
-<body>
+
+<body style="overflow-x: hidden;">
     <nav class="navbar navbar-light navbar-expand-md py-3 navbar-dark" style="background: linear-gradient(black, rgba(255,255,255,0));">
         <div class="container-fluid"><a class="navbar-brand d-flex" href="#" style="color: rgba(255,255,255,0.9);width: 260px;"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center"><img class="d-block main-logo" src="assets/img/Sygnet.svg?h=8757a4dc24d31d07283d1948cebdf64e" style="padding-right: 0;width: 34px;"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse navbar-dark" id="navcol-3">
@@ -29,17 +30,14 @@
         </div>
     </nav>
     <div class="flex-shrink-1 frame-background">
-        <div><img class="blur-logo" src="assets/img/Sygnet.svg?h=8757a4dc24d31d07283d1948cebdf64e"></div>
-        <div class="d-flex justify-content-center align-items-center">
-            <div style="height: 0;">
-                <div class="text-center square-div" style="transform: translateX(596px) translateY(423px);"><img class="square-img" src="assets/img/squares/Image(6).png?h=4a38d6b6d9a1082e46ae1af9eceedaba"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(6).png?h=4a38d6b6d9a1082e46ae1af9eceedaba"></div>
-                <div class="text-center square-div" style="transform: translateX(-726px) translateY(281px);"><img class="square-img" src="assets/img/squares/Image(7).png?h=0c94dc747f6a084bd64a097120891b05"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(7).png?h=0c94dc747f6a084bd64a097120891b05"></div>
-                <div class="text-center square-div" style="transform: translateX(-532px) translateY(535px);"><img class="square-img" src="assets/img/squares/Image(8).png?h=752f8f761311fd86a0425c7dbc544882"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(8).png?h=752f8f761311fd86a0425c7dbc544882"></div>
-                <div class="text-center square-div" style="transform: translateX(312px) translateY(627px);"><img class="square-img" src="assets/img/squares/Image(9).png?h=e0aee554791150a2f792a9a472f6e550"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(9).png?h=e0aee554791150a2f792a9a472f6e550"></div>
-                <div class="text-center square-div" style="transform: translateX(535px) translateY(139px);"><img class="square-img" src="assets/img/squares/Image(11).png?h=71e3b0ba2e165e8ff3549210018615c7"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(11).png?h=71e3b0ba2e165e8ff3549210018615c7"></div>
-            </div>
+        <div class="d-flex justify-content-center" id="squares" style="height: 100%;position: absolute;width: 100%;z-index: -1;overflow: hidden;top: 0;">
+            <div class="text-center square-div d-none d-md-block" style="transform: translate(40vw, 22vw);"><img class="square-img" src="assets/img/squares/Image(6).png?h=4a38d6b6d9a1082e46ae1af9eceedaba"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(6).png?h=4a38d6b6d9a1082e46ae1af9eceedaba"></div>
+            <div class="text-center square-div d-none d-md-block" style="transform: translate(-36vw, 11vw);"><img class="square-img" src="assets/img/squares/Image(7).png?h=0c94dc747f6a084bd64a097120891b05"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(7).png?h=0c94dc747f6a084bd64a097120891b05"></div>
+            <div class="text-center square-div d-none d-md-block" style="transform: translate(-34vw, 37vw);"><img class="square-img" src="assets/img/squares/Image(8).png?h=752f8f761311fd86a0425c7dbc544882"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(8).png?h=752f8f761311fd86a0425c7dbc544882"></div>
+            <div class="text-center square-div d-none d-md-block" style="transform: translate(40vw, 39vw);"><img class="square-img" src="assets/img/squares/Image(9).png?h=e0aee554791150a2f792a9a472f6e550"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(9).png?h=e0aee554791150a2f792a9a472f6e550"></div>
+            <div class="text-center square-div d-none d-md-block" style="transform: translate(29vw, 4vw);"><img class="square-img" src="assets/img/squares/Image(11).png?h=71e3b0ba2e165e8ff3549210018615c7"><span class="square-div-text">2.55 ETH</span><img class="square-img-blur" src="assets/img/squares/Image(11).png?h=71e3b0ba2e165e8ff3549210018615c7"></div>
         </div>
-        <div class="d-none d-lg-block z-index-2" style="height: 625px;">
+        <div class="d-none d-lg-block" style="height: 625px;z-index: 100;">
             <div class="justify-content-center" style="padding-top: 182px;">
                 <h1 class="center-inter justify-content-center" style="margin-bottom: 34px;">non fungible tokens</h1>
                 <h1 class="d-flex justify-content-center frame-text">A new NFT<img src="assets/img/Frame(1).svg?h=e539a5cf9db99a667e9aa9e66ce91029" style="margin-right: 110px;"></h1>
@@ -47,7 +45,7 @@
                 <h1 class="center-inter-2 center-inter justify-content-center" style="margin-top: 47px;">Discover, collect and sell</h1>
             </div>
         </div>
-        <div class="d-block d-lg-none z-index-2" style="padding-top: 20vw;">
+        <div class="d-block d-lg-none" style="padding-top: 20vw;">
             <h1 class="center-inter-3" style="margin-bottom: 34px;">non fungible tokens</h1>
             <div>
                 <div class="d-flex justify-content-center"><span class="d-flex align-items-center frame-text-3">A new NFT<img src="assets/img/Frame(1).svg?h=e539a5cf9db99a667e9aa9e66ce91029" style="width: 3.8vw;margin-left: 1vw;margin-right: 8vw;"></span></div>
@@ -55,14 +53,15 @@
             </div>
             <h1 class="d-sm-flex justify-content-sm-center center-inter-2 center-inter justify-content-center" style="margin-top: 47px;">Discover, collect and sell</h1>
         </div>
-        <div class="container z-index-2">
-            <div class="row text-center flex-shrink-1 justify-content-center align-items-center" style="margin-top: 300px;padding-bottom: 85px;">
-                <div class="col-3 d-flex flex-shrink-1 justify-content-center logos"><img src="assets/img/logos/Ritter%20Sport.svg?h=1dca0bf6b8ce7ed97c0bb72464f286dd"></div>
-                <div class="col-3 d-flex flex-shrink-1 justify-content-center logos"><img src="assets/img/logos/Nike.svg?h=770e4c8669cf51f950850801ec4d6146"></div>
-                <div class="col-3 d-flex flex-shrink-1 justify-content-center logos"><img src="assets/img/logos/Adidas.svg?h=1dca0bf6b8ce7ed97c0bb72464f286dd"></div>
-                <div class="col-3 d-flex flex-shrink-1 justify-content-center logos"><img src="assets/img/logos/New%20Holland.svg?h=8e8f3e8b8bae1db65d9cce0cdb142a0b"></div>
+        <div class="container d-flex justify-content-center">
+            <div class="row g-0 text-center" style="margin-top: 300px;padding-bottom: 85px;/*margin-left: 200px;*//*margin-right: 200px;*/max-width: 100%;">
+                <div class="col-3 d-flex flex-grow-1 flex-shrink-1 justify-content-center logos"><img src="assets/img/logos/Ritter%20Sport.svg?h=1dca0bf6b8ce7ed97c0bb72464f286dd"></div>
+                <div class="col-3 d-flex flex-grow-1 flex-shrink-1 justify-content-center logos"><img src="assets/img/logos/Nike.svg?h=770e4c8669cf51f950850801ec4d6146"></div>
+                <div class="col-3 d-flex flex-grow-1 flex-shrink-1 justify-content-center logos"><img src="assets/img/logos/Adidas.svg?h=1dca0bf6b8ce7ed97c0bb72464f286dd"></div>
+                <div class="col-3 d-flex flex-grow-1 flex-shrink-1 justify-content-center logos"><img src="assets/img/logos/New%20Holland.svg?h=8e8f3e8b8bae1db65d9cce0cdb142a0b"></div>
             </div>
         </div>
+        <div class="div-blur"><img class="blur-logo" src="assets/img/Sygnet.svg?h=8757a4dc24d31d07283d1948cebdf64e"></div>
     </div>
     <div>
         <h4 class="d-flex justify-content-center">Latest live auctions<br></h4>
@@ -107,8 +106,8 @@
     </div>
     <footer class="d-none d-xl-block">
         <div class="container footer-border" style="padding: 0;">
-            <div class="row g-0 d-flex">
-                <div class="col footer-col"><img src="assets/img/Logo(1).svg?h=d95fa1ce446e63bcd428564c6613c713">
+            <div class="row g-0">
+                <div class="col footer-col"><img src="assets/img/Logo(1).svg?h=d95fa1ce446e63bcd428564c6613c713" style="width: 213px;">
                     <div class="fill-height"></div>
                     <div class="d-flex"><span class="text-nowrap learn-more-sub">Support</span><span class="text-nowrap learn-more-sub" style="margin-right: 20px;margin-left: 20px;padding-right: 20px;padding-left: 20px;">Terms of service</span><span class="text-nowrap learn-more-sub">License</span></div>
                 </div>
@@ -117,7 +116,7 @@
                         <h5 class="footer-links">Auctions</h5>
                         <h5 class="footer-links">Roadmap</h5>
                         <h5 class="footer-links">Discover</h5>
-                        <h5 class="footer-links">Community</h5><button class="btn btn-primary" type="button" style="margin-top: 40px;">My account</button>
+                        <h5 class="footer-links">Community</h5><button class="btn btn-primary text-nowrap" type="button" style="margin-top: 40px;">My account</button>
                         <div style="margin-top: 40px;"><img class="footer-soc" src="assets/img/icons/Facebook%20Icon.svg?h=3f520ea71f5f4dc99c156cb366577f5c"><img class="footer-soc" src="assets/img/icons/LinkedIn%20Icon.svg?h=b051a014b263f7773964ac0935c5451a"><img class="footer-soc" src="assets/img/icons/Github%20Icon.svg?h=49afd0e23d32d6397a0334da2698e448"><img class="footer-soc" src="assets/img/icons/Twitter%20Icon.svg?h=91d2ea599e94b569a9924b6e2f8e15e2"><img class="footer-soc" src="assets/img/icons/Instagram%20Icon.svg?h=3f520ea71f5f4dc99c156cb366577f5c"></div>
                     </div>
                 </div>
@@ -132,8 +131,8 @@
     <footer class="d-none d-md-block d-lg-block d-xl-none d-xxl-none">
         <div class="container footer-border" style="padding: 0;">
             <div class="row g-0 d-flex">
-                <div class="col footer-col"><img src="assets/img/Logo(1).svg?h=d95fa1ce446e63bcd428564c6613c713">
-                    <div class="fill-height"></div>
+                <div class="col footer-col">
+                    <div class="fill-height"><img src="assets/img/Logo(1).svg?h=d95fa1ce446e63bcd428564c6613c713"></div>
                     <div class="d-flex"><span class="text-nowrap flex-grow-1 learn-more-sub">Support</span><span class="text-nowrap flex-grow-1 learn-more-sub" style="padding-right: 20px;padding-left: 20px;">Terms of service</span><span class="text-nowrap flex-grow-1 learn-more-sub">License</span></div>
                 </div>
                 <div class="col footer-col-mid footer-col">
@@ -153,37 +152,27 @@
             </div>
         </div>
     </footer>
-    <footer class="d-sm-block d-md-none">
-        <div class="container footer-border" style="padding: 0;">
-            <div class="row g-0 d-flex">
-                <div class="col footer-col"><img src="assets/img/Logo(1).svg?h=d95fa1ce446e63bcd428564c6613c713">
-                    <div class="fill-height"></div>
-                    <div class="d-flex"><span class="text-nowrap flex-grow-1 learn-more-sub">Support</span><span class="text-nowrap flex-grow-1 learn-more-sub">Terms of service</span><span class="text-nowrap flex-grow-1 learn-more-sub">License</span></div>
-                </div>
-                <div class="col footer-col footer-border-up">
-                    <div>
-                        <h5 class="footer-links">Auctions</h5>
-                        <h5 class="footer-links">Roadmap</h5>
-                        <h5 class="footer-links">Discover</h5>
-                        <h5 class="footer-links">Community</h5><button class="btn btn-primary" type="button" style="margin-top: 40px;">My account</button>
-                        <div style="margin-top: 40px;"><img class="footer-soc" src="assets/img/icons/Facebook%20Icon.svg?h=3f520ea71f5f4dc99c156cb366577f5c"><img class="footer-soc" src="assets/img/icons/LinkedIn%20Icon.svg?h=b051a014b263f7773964ac0935c5451a"><img class="footer-soc" src="assets/img/icons/Github%20Icon.svg?h=49afd0e23d32d6397a0334da2698e448"><img class="footer-soc" src="assets/img/icons/Twitter%20Icon.svg?h=91d2ea599e94b569a9924b6e2f8e15e2"><img class="footer-soc" src="assets/img/icons/Instagram%20Icon.svg?h=3f520ea71f5f4dc99c156cb366577f5c"></div>
-                    </div>
-                </div>
-                <div class="col footer-col footer-border-up">
-                    <p class="learn-more-sub">Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, sed egestas in. Id nam semper dolor tellus vulputate eget turpis. </p>
-                    <div class="fill-height"></div>
-                    <div class="d-flex flex-grow-0 newsletter-box"><input type="text" class="newsletter-input" placeholder="Newsletter" style="width: 100%;"><button class="btn newsletter-button" type="button">Sign in</button></div>
-                </div>
+    <footer class="d-sm-block d-md-none footer-border-2">
+        <div class="col footer-col"><img class="img-fluid" src="assets/img/Logo(1).svg?h=d95fa1ce446e63bcd428564c6613c713" style="width: 213px;height: 34px;margin-bottom: 48px;">
+            <div class="fill-height"></div>
+            <div class="d-flex"><span class="text-nowrap flex-grow-1 learn-more-sub">Support</span><span class="text-nowrap flex-grow-1 learn-more-sub">Terms of service</span><span class="text-nowrap flex-grow-1 learn-more-sub">License</span></div>
+        </div>
+        <div class="col footer-col footer-border-up">
+            <div>
+                <h5 class="footer-links">Auctions</h5>
+                <h5 class="footer-links">Roadmap</h5>
+                <h5 class="footer-links">Discover</h5>
+                <h5 class="footer-links">Community</h5><button class="btn btn-primary" type="button" style="margin-top: 40px;">My account</button>
+                <div style="margin-top: 40px;"><img class="footer-soc" src="assets/img/icons/Facebook%20Icon.svg?h=3f520ea71f5f4dc99c156cb366577f5c"><img class="footer-soc" src="assets/img/icons/LinkedIn%20Icon.svg?h=b051a014b263f7773964ac0935c5451a"><img class="footer-soc" src="assets/img/icons/Github%20Icon.svg?h=49afd0e23d32d6397a0334da2698e448"><img class="footer-soc" src="assets/img/icons/Twitter%20Icon.svg?h=91d2ea599e94b569a9924b6e2f8e15e2"><img class="footer-soc" src="assets/img/icons/Instagram%20Icon.svg?h=3f520ea71f5f4dc99c156cb366577f5c"></div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-            </div>
+        <div class="col footer-col footer-border-up">
+            <p class="learn-more-sub">Nibh volutpat, aliquam id sagittis elementum. Pellentesque laoreet velit, sed egestas in. Id nam semper dolor tellus vulputate eget turpis. </p>
+            <div class="fill-height"></div>
+            <div class="d-flex flex-grow-0 newsletter-box"><input type="text" class="newsletter-input" placeholder="Newsletter" style="width: 100%;"><button class="btn newsletter-button" type="button">Sign in</button></div>
         </div>
     </footer>
-    <div id="card-template" class="card-unit" style="display:none;">
+    <div id="card-template" class="card-unit" style="display: none;">
         <div class="card-img-holder" style="width: 100%;"><img class="card-img" src="assets/img/cards/Image01.png?h=90f028fa15fca7a65b10c7346c5be333"></div>
         <div class="container d-flex flex-grow-1">
             <div class="row flex-grow-1">
@@ -206,7 +195,7 @@
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js?h=5488c86a1260428f0c13c0f8fb06bf6a"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="assets/js/script.js?h=fbb8804c0312d79573884bcbd4b0231f"></script>
+    <script src="assets/js/script.js?h=cfc575d61c846da6340be3a9f3f4d5e1"></script>
 </body>
 
 </html>
